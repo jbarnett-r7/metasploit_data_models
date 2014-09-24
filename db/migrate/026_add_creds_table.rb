@@ -2,7 +2,7 @@ class AddCredsTable < ActiveRecord::Migration
 	def self.up
 		create_table :creds do |t|
 			t.integer   :service_id, :null => false
-			t.timestamps 
+			t.timestamps null: false
 			t.string    :user, :limit => 2048
 			t.string    :pass, :limit => 4096
 			t.boolean   :active, :default => true

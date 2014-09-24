@@ -3,7 +3,7 @@ class AddWebTables < ActiveRecord::Migration
 	def self.up
 		create_table :web_sites do |t|
 			t.integer   :service_id, :null => false
-			t.timestamps 
+			t.timestamps null: false
 			t.string    :vhost, :limit => 2048
 			t.text      :comments
 			t.text      :options
@@ -11,7 +11,7 @@ class AddWebTables < ActiveRecord::Migration
 		
 		create_table :web_pages do |t|
 			t.integer   :web_site_id, :null => false
-			t.timestamps 
+			t.timestamps null: false
 			t.text      :path
 			t.text      :query
 			t.integer   :code, :null => false
@@ -26,7 +26,7 @@ class AddWebTables < ActiveRecord::Migration
 
 		create_table :web_forms do |t|
 			t.integer   :web_site_id, :null => false
-			t.timestamps 
+			t.timestamps null: false
 			t.text      :path
 			t.string    :method, :limit => 1024
 			t.text      :params
@@ -34,7 +34,7 @@ class AddWebTables < ActiveRecord::Migration
 
 		create_table :web_vulns do |t|
 			t.integer   :web_site_id, :null => false
-			t.timestamps 
+			t.timestamps null: false
 			t.text      :path
 			t.string    :method, :limit => 1024
 			t.text      :params

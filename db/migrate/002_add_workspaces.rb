@@ -3,7 +3,7 @@ class AddWorkspaces < ActiveRecord::Migration
 	def self.up
 		create_table :workspaces do |t|
 			t.string    :name
-			t.timestamps
+			t.timestamps null: false
 		end
 
 		change_table :hosts do |t|
