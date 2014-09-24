@@ -4,7 +4,7 @@ source "http://rubygems.org"
 gemspec
 
 gem 'metasploit-concern', :github => 'rapid7/metasploit-concern', :branch => 'staging/rails-4.0'
-gem 'metasploit-model', :github => 'rapid7/metasploit-model', :branch => 'staging/rails-4.0'
+gem 'metasploit-model', :github => 'rapid7/metasploit-model', :branch => 'feature/MSP-11385/rails-4.0-autoload'
 
 group :development do
   gem 'metasploit-erd', :github => 'rapid7/metasploit-erd', :branch => 'staging/rails-4.0'
