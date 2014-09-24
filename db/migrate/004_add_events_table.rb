@@ -3,7 +3,7 @@ class AddEventsTable < ActiveRecord::Migration
 		create_table :events do |t|
 			t.integer   :workspace_id
 			t.integer   :host_id
-			t.timestamp :created_at, null: false
+			t.timestamp :created_at
 			t.string    :user
 			t.string    :name
 			t.string    :info

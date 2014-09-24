@@ -139,7 +139,7 @@ CREATE TABLE events (
     id integer NOT NULL,
     workspace_id integer,
     host_id integer,
-    created_at timestamp without time zone NOT NULL,
+    created_at timestamp without time zone,
     name character varying(255),
     updated_at timestamp without time zone,
     critical boolean,
