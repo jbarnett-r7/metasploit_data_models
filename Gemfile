@@ -5,25 +5,25 @@ gemspec
 
 gem 'metasploit-concern',
     github: 'rapid7/metasploit-concern',
-    branch: 'staging/rails-4.1'
+    branch: 'staging/rails-4.2'
 
 gem 'metasploit-model',
     github: 'rapid7/metasploit-model',
-    branch: 'staging/rails-4.1'
+    branch: 'staging/rails-4.2'
 
 group :development do
   gem 'metasploit-erd',
       github: 'rapid7/metasploit-erd',
-      branch: 'staging/rails-4.1'
+      branch: 'staging/rails-4.2'
 
   # embed ERDs on index, namespace Module and Class<ActiveRecord::Base> pages
   gem 'yard-metasploit-erd',
       github: 'rapid7/yard-metasploit-erd',
-      branch: 'staging/rails-4.1'
+      branch: 'staging/rails-4.2'
 
   gem 'metasploit-yard',
       github: 'rapid7/metasploit-yard',
-      branch: 'staging/rails-4.1'
+      branch: 'staging/rails-4.2'
 end
 
 # used by dummy application
@@ -36,7 +36,7 @@ group :development, :test do
   # auto-load factories from spec/factories
   gem 'factory_girl_rails'
 
-  rails_version_constraint = ['~> 4.1.0']
+  rails_version_constraint = ['~> 4.2.0']
   gem 'rails', *rails_version_constraint
   # Used to create fake data
   gem "faker"

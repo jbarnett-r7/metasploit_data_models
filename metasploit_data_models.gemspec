@@ -44,7 +44,7 @@ Gem::Specification.new do |s|
   # debugging
   s.add_development_dependency 'pry'
 
-  rails_version_constraints = ['~> 4.1.0']
+  rails_version_constraints = ['~> 4.2.0']
 
   s.add_runtime_dependency 'activerecord', *rails_version_constraints
   s.add_runtime_dependency 'activesupport', *rails_version_constraints
